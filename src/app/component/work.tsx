@@ -10,19 +10,17 @@ const projectData = [
     ];
 
 export default function Work() {
-
     return (
-        <div className=" flex flex-col w-full  pl-30 pr-30 mt-30" id="projects">
-            <div className="flex items-center gap-30 ">
+        <div className="flex flex-col w-full px-4 sm:px-10 md:px-20 mt-10" id="projects">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 mb-6">
                 <div className="flex items-center gap-2 w-full">
-                    <h1 className="text-2xl font-bold "> <span className="text-blue-500">#</span>projects</h1>
-                    <div className=" h-1 w-100 bg-blue-500 "></div>
+                    <h1 className="text-2xl font-bold"> <span className="text-blue-500">#</span>projects</h1>
+                    <div className="h-1 w-20 bg-blue-500"></div>
                 </div>
-                <Link href={"/"} className="flex items-center gap-2 text-sm ">ViewAll   <MdOutlineKeyboardDoubleArrowRight /> </Link>
+                <Link href="/" className="flex items-center gap-2 text-sm sm:text-base whitespace-nowrap">ViewAll <MdOutlineKeyboardDoubleArrowRight /> </Link>
             </div>
-            <div className="flex gap-5 mt-10">
-               {
-                projectData.map((projet, index) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+                {projectData.map((projet, index) => (
                     <Project
                         ImageSrc={projet.image}
                         title={projet.title}
@@ -31,9 +29,8 @@ export default function Work() {
                         key={index}
                         link={projet.link}
                     />
-                ))
-               }
+                ))}
             </div>
         </div>
-    )
+    );
 }

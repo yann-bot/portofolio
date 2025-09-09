@@ -6,17 +6,19 @@ export default function Hero() {
     
     return (
        
-           <div> 
-            <div id="home" className="flex gap-20 justify-center items-center  mt-10">
-             {/* Text */}
-                <div className="flex flex-col  gap-5" >
-                <h1 className="text-2xl ">Hi, I'm a Yann Dubois Ouafete. <br/>I'm <span className="text-blue-500">FullStack Developper </span>And <br/><span className="text-blue-500">Software Ingineer</span> </h1>
-                <p> With me, simple, effective solutions tailored to the essential</p>
-                <Link  className="border border-blue-500 w-fit p-1 pl-4 pr-4" href={"#contact"}> Contact Me !</Link>
+           <div className="flex justify-center"> 
+            <div id="home" className="  md:flex gap-20 justify-center items-center  mt-10">
+                {/* Text */}
+                
+                <div className=" p-10 flex flex-col  gap-5" >
+                 <h1 className="text-2xl ">Hi, I'm a Yann Dubois Ouafete. <br/>I'm <span className="text-blue-500">FullStack Developper </span>And <br/><span className="text-blue-500">Software Ingineer</span> </h1>
+                 <p> With me, simple, effective solutions tailored to the essential</p>
+                 <Link  className="border border-blue-500 w-fit p-1 pl-4 pr-4" href={"#contact"}> Contact Me !</Link>
                 </div>
 
                 {/* Image */}
-                <div className="">
+                
+                <div className=" hidden lg:block">
                     <Image 
                     src={"/yann.jpeg"}
                     alt="yann"

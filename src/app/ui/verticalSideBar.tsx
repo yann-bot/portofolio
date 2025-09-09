@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <div className="fixed top-0 right-0 h-screen w-16 bg-[#2B2F36] flex flex-col items-center justify-between py-6 shadow-lg z-50">
+    <div className="  hidden xl:fixed  xl:top-0 xl:right-0 h-screen w-16 bg-transparent xl:bg-[#2B2F36] xl:flex flex-col items-center justify-between py-6 xl:shadow-lg z-50">
       {/* Ligne verticale + icônes du haut */}
       <div className="flex flex-col items-center space-y-6">
         <div className="w-px h-24 bg-gray-500" />

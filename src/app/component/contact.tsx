@@ -57,19 +57,19 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col w-full pl-30 pr-30 mt-30">
-      <div className="flex items-center gap-30">
-        <div className="flex items-center gap-2" id="contact">
+    <div className="flex flex-col w-full px-4 sm:px-10 md:px-20 mt-10">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-10 mb-6">
+        <div className="flex items-center gap-2 w-full" id="contact">
           <h1 className="text-2xl font-bold">
             <span className="text-blue-500">#</span>contact me
           </h1>
-          <div className="flex-1 h-1 w-100 bg-blue-500"></div>
+          <div className="h-1 w-20 bg-blue-500 flex-1"></div>
         </div>
       </div>
 
-      <div className="w-full flex p-10 justify-between">
-        <div className="w-1/2">
-          <p>
+      <div className="w-full flex flex-col md:flex-row p-4 sm:p-10 gap-8 md:gap-16 justify-between">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0">
+          <p className="text-base sm:text-lg text-gray-200">
             Do you have a digital project idea 💡?<br />
             Do you want to enhance your online presence 🚀, optimize your
             processes 📈, or bring an innovative solution to life?<br />
@@ -87,7 +87,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div>
+        <div className="w-full md:w-1/2">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col gap-4"
@@ -100,7 +100,7 @@ export default function Contact() {
               id="name"
               {...register("name")}
               placeholder="Your name"
-              className="p-3 rounded-md w-90 border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-3 rounded-md w-full border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {errors.name && (
               <span className="text-red-500 text-sm">{errors.name.message}</span>
@@ -114,7 +114,7 @@ export default function Contact() {
               id="email"
               {...register("email")}
               placeholder="yannouafete@gmail.com"
-              className="p-3 rounded-md border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-3 rounded-md w-full border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {errors.email && (
               <span className="text-red-500 text-sm">{errors.email.message}</span>
@@ -128,7 +128,7 @@ export default function Contact() {
               id="subject"
               {...register("subject")}
               placeholder="Subject of Message"
-              className="p-3 rounded-md border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-3 rounded-md w-full border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {errors.subject && (
               <span className="text-red-500 text-sm">{errors.subject.message}</span>
@@ -142,7 +142,7 @@ export default function Contact() {
               rows={5}
               {...register("message")}
               placeholder="Your message"
-              className="p-3 rounded-md border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="p-3 rounded-md w-full border border-gray-700 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {errors.message && (
               <span className="text-red-500 text-sm">{errors.message.message}</span>
@@ -155,7 +155,7 @@ export default function Contact() {
                 isSubmitting
                   ? "bg-gray-500 cursor-not-allowed"
                   : "bg-blue-600 hover:bg-blue-700"
-              }`}
+              } w-full`}
             >
               {isSubmitting ? "Submiting..." : "Submit"}
             </button>

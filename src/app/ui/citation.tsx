@@ -1,6 +1,6 @@
 export default function QuoteBox() {
   return (
-    <div className="flex mt-10 items-center justify-center">
+    <div className="  hidden ld:flex mt-10 items-center justify-center">
       <figure className="border border-gray-400 p-6 max-w-xl">
         {/* Texte avec guillemets autour */}
         <blockquote className="text-lg font-mono italic text-center">
