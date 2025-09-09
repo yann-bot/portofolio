@@ -44,7 +44,7 @@ export default function Project(props: ProjectProps) {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Live !
+                Live Demo!
             </Link>
         </div>
     )

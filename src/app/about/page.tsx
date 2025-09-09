@@ -21,8 +21,8 @@ export default function About() {
             className="rounded-lg object-cover w-full max-w-xs mx-auto"
           />
         </div>
-        <div className="flex flex-col md:flex-row justify-between w-full gap-8 md:gap-16">
-          <p className="w-full md:w-1/2 text-base sm:text-lg text-gray-200">
+  <div className="flex flex-col  md:flex-row justify-between  w-full gap-4 ">
+          <p className="w-full  md:w-1/2 text-base sm:text-lg text-gray-200">
             Hi, I’m Yann Dubois Ouafete, a Full-Stack Developer and Software Engineer with a passion for building both polished applications and experimental software.<br />
             <br />
             I love turning ideas into real, functional projects—whether it’s a web app, a small utility, or a cutting-edge tool. Beyond building apps for users, I spend my free time exploring the edges of technology: creating CLI tools, text editors, mini operating systems, and experimenting with AI algorithms.<br />
@@ -33,7 +33,7 @@ export default function About() {
             <br />
             Let’s create something amazing together!
           </p>
-          <div className="hidden md:flex flex-col gap-6 items-center md:items-start">
+          <div className="hidden  md:flex md:mr-30 flex-col gap-6 items-center md:items-start">
             <Image
               src={"/yann2.jpeg"}
               alt="me"

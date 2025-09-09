@@ -9,7 +9,7 @@ const GRID_SIZE = 5;
 
 const DotGrid = () => {
   return (
-    <div className="grid grid-cols-5 gap-3 w-30 h-20 justify-items-center items-center">
+    <div className="grid grid-cols-5 gap-3 sm:w-30 sm:h-20 md:w-40 md:h-30 justify-items-center items-center">
       {Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, index) => (
         <div
           key={index}

@@ -22,8 +22,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center gap-1 text-sm self-center">
-                <PiCopyrightThin /> <span>Copyright 2025, By Yann Dubois Ouafete, Bangui</span>
+            <div className="flex items-center gap-1 text-sm self-center w-full max-w-full truncate justify-center md:justify-center">
+                <PiCopyrightThin />
+                <span className="truncate">Copyright 2025, By Yann Dubois Ouafete, Bangui</span>
             </div>
         </div>
     );

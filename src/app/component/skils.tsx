@@ -1,7 +1,6 @@
 
+
 import DotGrid from "../ui/dotGird";
-import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-import NestedSquares from "../ui/nestedSquare";
 import SkillsCard from "../ui/skillsCard";
 import skillData from "../data/skillsData";
 
@@ -16,17 +15,17 @@ export default function Skills() {
                     </div>
                 </div>
                 <div className="w-full flex flex-col md:flex-row p-4 sm:p-10 items-center md:items-start gap-8">
-                    <div className="flex flex-col gap-8 w-full md:w-1/2 mb-6 md:mb-0">
+                    <div className=" hidden md:flex flex-col gap-8 w-full md:w-1/2 mb-6 md:mb-0">
                         <div className="flex justify-center gap-6 w-full">
                             <div className="mt-4"> <DotGrid /></div>
-                            <div className="w-16 h-16 border border-white"></div>
+                            <div className="sm:w-16 sm:h-16 md:w-40 md:h-40 border border-white"></div>
                         </div>
                         <div>
                             <DotGrid />
                         </div>
                     </div>
                     {/*Skills*/}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm w-full md:w-1/2">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm w-full md:w-1/2">
                         {skillData.map((skill, index) => (
                             <SkillsCard key={index} title={skill.title} techno={skill.techno} />
                         ))}
