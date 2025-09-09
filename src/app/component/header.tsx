@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link";
-import Image from "next/image";
 import Sidebar from "../ui/verticalSideBar";
 import { MdTranslate } from "react-icons/md";
 

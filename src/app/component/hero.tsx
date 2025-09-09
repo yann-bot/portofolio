@@ -11,7 +11,7 @@ export default function Hero() {
                 {/* Text */}
                 
                 <div className=" p-10 flex flex-col  gap-5" >
-                 <h1 className="text-2xl ">Hi, I'm a Yann Dubois Ouafete. <br/>I'm <span className="text-blue-500">FullStack Developper </span>And <br/><span className="text-blue-500">Software Ingineer</span> </h1>
+                 <h1 className="text-2xl ">Hi, I&aposm a Yann Dubois Ouafete. <br/>I&aposm <span className="text-blue-500">FullStack Developper </span>And <br/><span className="text-blue-500">Software Ingineer</span> </h1>
                  <p> With me, simple, effective solutions tailored to the essential</p>
                  <Link  className="border border-blue-500 w-fit p-1 pl-4 pr-4" href={"#contact"}> Contact Me !</Link>
                 </div>

@@ -2,8 +2,8 @@
 import Link from "next/link"
 
 interface Props {
-    title: String,
-    description: String,
+    title: string,
+    description: string,
     stack: string[],
     link: string
 }

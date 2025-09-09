@@ -15,7 +15,7 @@ export default function About() {
             <div className="w-full flex flex-col md:flex-row p-4 sm:p-10 items-center md:items-start gap-8">
                 <div className="w-full md:w-1/2 mb-6 md:mb-0">
                     <p className="text-base sm:text-lg text-gray-200">
-                        I’m a Fullstack Developer and Software Engineer based in Bangui, Central African Republic 🇨🇫.<br /><br />
+                        I&aposm a Fullstack Developer and Software Engineer based in Bangui, Central African Republic 🇨🇫.<br /><br />
                         Passionate about technology, I help turn your ideas into innovative digital products with a simple and efficient approach.<br />
                         With 2 years of experience, I leverage my skills to support your digital inclusion by building solutions tailored to your needs.<br />
                         <br />

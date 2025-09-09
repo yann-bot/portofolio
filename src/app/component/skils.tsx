@@ -1,5 +1,4 @@
 
-import Link from "next/link"
 import DotGrid from "../ui/dotGird";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import NestedSquares from "../ui/nestedSquare";

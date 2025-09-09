@@ -1,6 +1,6 @@
 
 interface Props {
-    fact: String
+    fact: string
 
 }
 

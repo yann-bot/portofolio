@@ -74,9 +74,9 @@ export default function Contact() {
             Do you want to enhance your online presence 🚀, optimize your
             processes 📈, or bring an innovative solution to life?<br />
             <br />
-            I’m here to help you turn your ideas into simple, effective, and
+            I&aposm here to help you turn your ideas into simple, effective, and
             tailored digital products.<br />
-            📩 Contact me today, and let’s bring your projects to life!<br />
+            📩 Contact me today, and let&aposs bring your projects to life!<br />
           </p>
           <div className="flex flex-col mt-10 pt-2 pb-2 pl-3 pr-3 border w-fit gap-2">
             <h2>Message me here</h2>
