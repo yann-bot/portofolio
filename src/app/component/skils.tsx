@@ -25,7 +25,7 @@ export default function Skills() {
                         </div>
                     </div>
                     {/*Skills*/}
-                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm w-full md:w-1/2">
+                    <div className="grid grid-cols-1  md:grid-cols-2 gap-4 text-sm w-full md:w-1/2">
                         {skillData.map((skill, index) => (
                             <SkillsCard key={index} title={skill.title} techno={skill.techno} />
                         ))}

@@ -15,7 +15,7 @@ export default function Work() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 mb-6">
                 <div className="flex items-center gap-2 w-full">
                     <h1 className="text-xl sm:text-2xl md:text-3xl font-bold"> <span className="text-blue-500">#</span>projects</h1>
-                    <div className="h-1 w-10 sm:w-20 md:w-1/2 bg-blue-500"></div>
+                    <div className="h-1  w-1/2 md:w-1/2 bg-blue-500"></div>
                 </div>
                 <Link href="/" className="hidden md:flex items-center gap-2 text-sm md:text-base lg:text-lg whitespace-nowrap font-semibold">ViewAll <MdOutlineKeyboardDoubleArrowRight /> </Link>
             </div>
