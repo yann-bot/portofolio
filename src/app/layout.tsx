@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./component/header";
 import Footer from "./component/footer";
-import { NextIntlClientProvider } from 'next-intl';
+
 
 
 const geistSans = Geist({
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div style={{ backgroundColor: "rgba(40,44,51,255)" }} className="relative 2xl:ml-40 xl:mr-40 flex flex-col gap-5 font-mono pt-24">
+        <div style={{ backgroundColor: "rgba(40,44,51,255)" }} className="relative 2xl:ml-40 xl:mr-40 flex flex-col gap-5 font-mono ">
           <Header />
           {children}
           <Footer />
